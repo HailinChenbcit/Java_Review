@@ -51,7 +51,54 @@ public class Day2 {
 //    }
 //    System.out.println(str);
   
+//    Looping: for
+//    print 100 lines
+//    for (int i = 0; i < 100; i++) {
+//      System.out.println("This is line" + (i + 1));
+//    }
+//    infinite loop
+//    for (;;){
+//      System.out.println("DEAD END!");
+//    }
+    
+//    sum of all odd numbers that less than 100
+//    int sum = 0;
+//    for (int i = 1; i < 100; i += 2) {
+//      sum += i;
+//    }
+//    System.out.println(sum);
+    
+//    do...while: At least execute 1~n times, execute the body then check while
+//    While: 0~n times
+//    int i = 0;
+//    do {
+//      System.out.println(i++); // 0~9
+//    } while (i < 10);
   
+//    do {
+//      System.out.println(++i); // 1~10
+//    } while (i < 10);
+    
+    /*
+    break and continue
+     */
+//    loop with a label
+//    a: for (int i=0; i<3; i++){
+//      b: for (int j=0; j<3; j++) {
+//        if (j == 2) {
+//          break a;
+//        }
+//      }
+//      System.out.println("Ended");
+//    }
   
+    for (int i =0; i < 5; i++) {
+      if (i == 3) {
+        continue;
+      }
+      System.out.println(i);
+    }
+    
+    
   }
 }
