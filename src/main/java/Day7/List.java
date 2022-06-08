@@ -21,4 +21,3 @@ public class List {
   7. It is hard to find large continuous space in memory (not good for large array)
  */
 
-
