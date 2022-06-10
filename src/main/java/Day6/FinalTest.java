@@ -1,7 +1,5 @@
 package Day6;
 
-import org.w3c.dom.ls.LSOutput;
-
 public class FinalTest {
   public static void main (String[] args) {
 //    final int k = 100;
