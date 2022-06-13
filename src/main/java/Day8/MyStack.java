@@ -1,5 +1,7 @@
 package Day8;
 
+import Day12.MyException;
+
 public class MyStack {
   private Object[] elements;
   private int index;
@@ -13,10 +15,11 @@ public class MyStack {
    *  push objects to stack
    * @param obj
    */
-  public void push(Object obj) {
+  public void push(Object obj) throws MyException {
     if (this.index >= this.elements.length - 1) {
-      System.out.println("Stack full!");
-      return;
+//      System.out.println("Stack full!");
+//      return;
+      throw new MyException("Custom Exception!");
     }
     this.index++;
     this.elements[index] = obj;

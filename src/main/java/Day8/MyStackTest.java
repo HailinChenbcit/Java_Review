@@ -1,8 +1,15 @@
 package Day8;
 
+import Day12.MyException;
+
 public class MyStackTest {
   public static void main (String[] args) {
     MyStack stack = new MyStack();
-    stack.push(new Object());
+//    Catch customized exception when calling the function
+    try {
+      stack.push(new Object());
+    } catch (MyException e) {
+      e.printStackTrace();
+    }
   }
 }
