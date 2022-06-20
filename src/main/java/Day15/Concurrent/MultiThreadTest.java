@@ -5,6 +5,11 @@ public class MultiThreadTest {
     /*
       1. class extends java.lang.Thread, overwrite run() method
       2. class implement java.lang.Runnable
+      
+      CPU is not concurrently running all threads, but one by one
+      If one thread in blocking state (user input), it will go back to ready state (start()),
+      and wait for the CPU to allocate power to it, then in the run() state.
+      
      */
     
 //    MyThread thread = new MyThread();
