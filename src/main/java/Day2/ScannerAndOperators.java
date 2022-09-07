@@ -1,8 +1,6 @@
 package Day2;
 
-import java.util.Scanner;
-
-public class Day2 {
+public class ScannerAndOperators {
   public static void main (String[] args) {
     /*
     >> is arithmetic shift right, >>> is logical shift right.

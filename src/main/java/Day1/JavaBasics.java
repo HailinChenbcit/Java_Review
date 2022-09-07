@@ -4,14 +4,25 @@ package Day1;
  * 1. One public class in each .java file
  * 2. The class name should be the same as the file name.
  */
-public class Test1 {
+public class JavaBasics {
     /**
      * main function: entrance -- __name__ == '__main__'
      * Only one entrance allowed
      */
     public static void main(String[] args) {
         System.out.println("Hello, Java");
-
+        long x = 100L;
+//        int y = x;
+        int y = (int) x;
+        System.out.println(y);
+        
+//      double8; float4 capacity > long8 capacity (any floating type4 > integer4 type)
+        double d = 1.0;
+        float f = 1.0f;
+        long l = 1L;
+        System.out.println(d > f);
+        System.out.println(f > l);
+        
     }
 
     /**
@@ -47,7 +58,7 @@ public class Test1 {
      * long 8
      * float 4
      * double 8
-     * boolean 1
+     * boolean 1bit
      * char 2
      * ASCII:
      * 'a' --> 97
@@ -111,7 +122,7 @@ public class Test1 {
         /*
             float 4 bytes - single precision
             double 8 bytes - double precision
-            BUT float capacity > long capacity (any floating type > integer type)
+            BUT float4 capacity > long8 capacity (any floating type4 > integer4 type)
          */
         double d = 1.0;
         float f = 1.0f;
@@ -121,8 +132,8 @@ public class Test1 {
 //        boolean bool = 1;
         /*
             arithmetic operator
-            ++x b4 variable: add then assign
-            x++ after variable: assign then add
+            ++x pre: add then assign
+            x++ post: assign then add
          */
         int m = 20;
         int n = m++;

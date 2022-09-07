@@ -8,4 +8,6 @@ public @interface MyAnnotation {
 	e.g: Target, Retention
 	*/
   String name();// attribute
+  
 }
+

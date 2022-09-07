@@ -1,5 +1,7 @@
 package Day3;
 
+import java.util.Objects;
+
 public class Student {
 //  Attributes
   private int studentID;
@@ -65,5 +67,18 @@ public class Student {
   
   public void setAddress (String address) {
     this.address = address;
+  }
+  
+  @Override
+  public boolean equals (Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    Student student = (Student) o;
+    return studentID == student.studentID && age == student.age && sex == student.sex && Objects.equals(name, student.name) && Objects.equals(address, student.address);
+  }
+  
+  @Override
+  public int hashCode () {
+    return Objects.hash(studentID, name, age, sex, address);
   }
 }
